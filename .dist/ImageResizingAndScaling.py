@@ -12,7 +12,7 @@ capture=cv.VideoCapture("c:/Users/rssat/OneDrive/Pictures\Camera Roll/Kantara_A_
 while True:
     isTrue,frames=capture.read()
 
-    cv.imshow('Video',image_Resized(frame))
+    cv.imshow('Video',image_Resized(frames))
     
     if cv.waitKey(20) & 0xFF==ord('d')  :
         break
